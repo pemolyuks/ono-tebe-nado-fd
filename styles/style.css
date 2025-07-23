@@ -1,1 +1,115 @@
-/* место для вашего кода */
+body {
+    width: 1100px;
+    height: 3028px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #ffffff;
+    height: 293px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 50px;
+    position: relative;
+}
+
+.header-menu {
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-size: 18px;
+    display: flex;
+    column-gap: 31px;
+}
+
+.header-menu-link {
+    color: #000000;
+    line-height: normal;
+}
+
+.logotype {
+    width: 148px;
+    height: 105px;
+    display: flex;
+    position: relative;
+    left: 46px;
+}
+
+.header-list {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    display: flex;
+    position: relative;
+    left: 194px;
+
+}
+
+.header-list-link {
+    color: #000000;
+    line-height: normal;
+
+}
+
+.cover {
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+    url("../images/cover.jpg") no-repeat center/cover;
+    position: relative;
+    background-position: 20% 35%;
+    background-size: cover;
+    width: 1100px;
+    height: 757px;
+    overflow: hidden;
+}
+
+.headline {
+    display: block;
+    font-family: "Raleway", sans-serif;
+    font-size: 100px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 38px;
+    padding:50px 50px;
+}
+
+.title {
+    display: block;
+}
+
+.title-center {
+    
+    text-align: center;
+}
+
+.title-right {
+    text-align: right;
+    
+    
+}
+.description{
+    display: flex;
+    padding:50px 50px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    padding-bottom: 139px;
+    color: #ffffff;
+    text-transform: uppercase;
+    align-items: center;
+    gap:70px;
+    justify-content: space-between;
+}
+
+.subline{
+    word-spacing: 23px;
+    flex-wrap: nowrap;
+}
+
+.button {
+    padding-left: 70px;
+    border: 2px solid #ffffff;
+    padding: 16px 31px;
+    word-spacing: normal; 
+    white-space: nowrap;
+
+
+}
