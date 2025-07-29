@@ -2,12 +2,12 @@ body {
   width: 1100px;
   margin: 0 auto;
   box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
 }
 
 .header {
   background-color: #ffffff;
   height: 293px;
-  font-family: "Raleway", sans-serif;
   color: #000000;
   font-size: 18px;
   display: flex;
@@ -81,7 +81,6 @@ body {
 .header-list {
   white-space: normal;
   word-break: break-all;
-  font-family: "Raleway", sans-serif;
   font-size: 18px;
 }
 
@@ -92,31 +91,29 @@ body {
   display: inline-block;
   max-width: 100%;
 }
-
 .cover {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
     url("../images/cover.jpg") no-repeat center/cover;
   position: relative;
-  background-position: 50% 50%;
-  background-size: cover;
   width: 1100px;
   height: 757px;
+  display: flex;               
+  flex-direction: column;      
+  padding: 165px 50px 60px;
+  box-sizing: border-box;
   overflow: hidden;
-  margin-bottom: 0;
 }
 
 .headline {
   display: flex;
   flex-direction: column;
-  font-family: "Raleway", sans-serif;
   font-size: 100px;
   color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: 38px;
-  padding: 50px;
-  box-sizing: border-box;
-  position: relative;
-  padding-top: 115px;
+  letter-spacing: 35px;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;             
 }
 
 .title {
@@ -128,44 +125,59 @@ body {
 }
 
 .title-right {
-  position: absolute;
-  right: 0;
-  top: calc(90% + 64px);
-  transform: translateY(-50%);
+    padding-top: 37px;
   text-align: right;
+ }
+
+.title-right::after {
+  content: "";
+  display: inline-block;
+ 
+  margin-right: -96px;
 }
 
 .description {
   display: flex;
-  padding: 50px 50px;
-  font-family: "Raleway", sans-serif;
+  padding: 0;
+  margin-top: auto;          
   font-size: 22px;
-  padding-top: 100px;
   color: #ffffff;
   text-transform: uppercase;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
+  padding-right: 50px;
+  
 }
 
 .subline {
   word-spacing: 15px;
-  flex-wrap: nowrap;
+   margin: 0;
+   
 }
 
 .button {
-  padding-left: 70px;
-  border: 2px solid #ffffff;
-  padding: 16px 31px;
-  word-spacing: normal;
-  white-space: nowrap;
+ position: relative;
+  display: inline-block;
   color: #ffffff;
-  text-underline-offset: 4px;
+  text-decoration: none;
+  font-size: inherit;
+  line-height: 1; 
+  border: none; 
 }
+.button::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  right: -32px;
+  bottom: -13px;
+  left: -32px;
+  border: 1px solid #ffffff;
+    }
 
 .lots {
   background-color: #ffffff;
   margin-top: 188px;
-  font-family: "Raleway", sans-serif;
+
   display: grid;
   grid-template-rows: auto 1fr;
   grid-template-columns: repeat(3, 334px);
@@ -264,7 +276,6 @@ body {
 }
 
 .about {
-  font-family: "Raleway", sans-serif;
   background-color: #ffffff;
   padding: 0 25px 0 25px;
   display: grid;
@@ -317,12 +328,12 @@ body {
 
 .about-discriptions {
   font-size: 20px;
-  padding-top: 18%;
+  padding-top: 25px;
 }
 
 .footer-menu {
   background-color: #ffffff;
-  font-family: "Raleway", sans-serif;
+
   font-size: 18px;
   color: #000000;
   display: grid;
@@ -369,7 +380,7 @@ body {
   align-self: self-start;
   justify-self: self-end;
   padding-top: 15px;
-  padding-right: 50px;
+  
 }
 
 .socials {
