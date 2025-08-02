@@ -182,11 +182,9 @@ body {
 .lots {
   background-color: #ffffff;
   margin-top: 180px;
-  display: grid;
-  grid-template-rows: auto 1fr;
-  grid-template-columns: repeat(3, 334px);
-  row-gap: 25px;
-  column-gap: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
   padding-left: 25px;
   margin-bottom: 150px;
 }
@@ -195,11 +193,9 @@ body {
   font-size: 40px;
   color: #000000;
   text-transform: uppercase;
-  grid-column: 1 / -1;
+  width: 100%;
   padding-left: 40px;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  align-self: start;
+  margin-bottom: 25px;
 }
 
 .first-section,

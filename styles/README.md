@@ -1,1 +1,0 @@
-https://github.com/pemolyuks/ono-tebe-nado-fd
